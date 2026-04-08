@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - BBNT Auto</title>
+    <meta name="description" content="Get in touch with BBNT Auto support team. We're here to help with any questions about our AI content automation platform.">
+    <link rel="canonical" href="https://trancaominh95.github.io/contact.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">BBNT Auto</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="index.html#features">Features</a>
+                <a href="index.html#pricing">Pricing</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Content -->
+    <section class="legal-page contact-page">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Support</span>
+                <h1>Contact Us</h1>
+                <p>Have questions about BBNT Auto? Our team is ready to help you get started.</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info-cards">
+                    <div class="contact-info-card">
+                        <div class="feature-icon">📧</div>
+                        <h3>Email Support</h3>
+                        <p>For general inquiries and technical support</p>
+                        <a href="mailto:trancaominh95@gmail.com" class="contact-link">trancaominh95@gmail.com</a>
+                    </div>
+                    <div class="contact-info-card">
+                        <div class="feature-icon">⏰</div>
+                        <h3>Response Time</h3>
+                        <p>We typically respond within 24 hours on business days</p>
+                        <span class="contact-link">Mon–Fri, 9 AM – 6 PM (GMT+7)</span>
+                    </div>
+                    <div class="contact-info-card">
+                        <div class="feature-icon">🔒</div>
+                        <h3>Data & Privacy</h3>
+                        <p>For data deletion requests or privacy concerns</p>
+                        <a href="data-deletion.html" class="contact-link">Request Data Deletion →</a>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <h2>Send Us a Message</h2>
+                    <form class="contact-form" id="contact-form" action="#" method="POST">
+                        <div class="form-group">
+                            <label for="contact-name">Full Name *</label>
+                            <input type="text" id="contact-name" name="name" placeholder="Your full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email">Email Address *</label>
+                            <input type="email" id="contact-email" name="email" placeholder="your@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-subject">Subject *</label>
+                            <select id="contact-subject" name="subject" required>
+                                <option value="">Select a topic</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="technical">Technical Support</option>
+                                <option value="billing">Billing & Pricing</option>
+                                <option value="partnership">Partnership</option>
+                                <option value="data-deletion">Data Deletion Request</option>
+                                <option value="bug">Bug Report</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-message">Message *</label>
+                            <textarea id="contact-message" name="message" placeholder="Tell us how we can help you..." rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full" id="contact-submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 BBNT Auto. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="index.html">Home</a>
+                    <a href="terms.html">Terms</a>
+                    <a href="privacy.html">Privacy</a>
+                    <a href="data-deletion.html">Data Deletion</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const form = document.getElementById('contact-form');
+        if (form) {
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const name = document.getElementById('contact-name').value;
+                alert('Thank you, ' + name + '! Your message has been received. We will respond to your email within 24 hours.');
+                form.reset();
+            });
+        }
+    </script>
+</body>
+</html>

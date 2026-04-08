@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BBNT Auto - AI-Powered Content Automation Platform</title>
-    <meta name="description" content="BBNT Auto is an AI-powered content automation platform that helps creators generate, enhance, and publish high-quality video content efficiently.">
+    <meta name="description" content="BBNT Auto is an AI-powered content automation platform that helps creators and businesses generate, enhance, and publish high-quality video content efficiently.">
+    <meta name="keywords" content="AI content creation, video automation, TikTok, content platform, AI video, content creator tools">
+    <meta property="og:title" content="BBNT Auto - AI-Powered Content Automation Platform">
+    <meta property="og:description" content="Create stunning videos with AI automation. Generate, enhance, and publish high-quality content efficiently.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://trancaominh95.github.io/">
+    <link rel="canonical" href="https://trancaominh95.github.io/">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -12,7 +18,7 @@
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" id="main-nav">
         <div class="container nav-container">
             <a href="index.html" class="logo">
                 <span class="logo-icon">⚡</span>
@@ -21,30 +27,36 @@
             <div class="nav-links">
                 <a href="index.html" class="nav-link active">Home</a>
                 <a href="#features">Features</a>
-                <a href="terms.html" class="nav-link">Terms of Service</a>
-                <a href="privacy.html" class="nav-link">Privacy Policy</a>
+                <a href="#pricing">Pricing</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="#get-started" class="btn btn-primary btn-sm">Get Started Free</a>
             </div>
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">☰</button>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero" id="hero">
         <div class="hero-bg"></div>
         <div class="container hero-content">
-            <div class="hero-badge">🚀 AI-Powered Content Platform</div>
+            <div class="hero-badge">🚀 Now Open for Public Beta — Join Free Today</div>
             <h1>Create Stunning Videos<br><span class="gradient-text">with AI Automation</span></h1>
             <p class="hero-subtitle">
-                BBNT Auto leverages cutting-edge AI to generate, enhance, and publish
-                high-quality video content. From image generation to post-production —
-                all powered by artificial intelligence.
+                BBNT Auto is a public content automation platform that helps creators and businesses
+                generate, enhance, and publish high-quality video content — powered by cutting-edge AI.
+                Available for everyone, everywhere.
             </p>
             <div class="hero-actions">
-                <a href="#features" class="btn btn-primary">Explore Features</a>
-                <a href="#how-it-works" class="btn btn-secondary">How It Works</a>
+                <a href="#get-started" class="btn btn-primary" id="hero-cta-primary">Start Creating Free</a>
+                <a href="#how-it-works" class="btn btn-secondary">See How It Works</a>
             </div>
             <div class="hero-stats">
                 <div class="stat">
-                    <span class="stat-number">10K+</span>
+                    <span class="stat-number">5,200+</span>
+                    <span class="stat-label">Active Users</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">48K+</span>
                     <span class="stat-label">Videos Created</span>
                 </div>
                 <div class="stat">
@@ -65,38 +77,38 @@
             <div class="section-header">
                 <span class="section-badge">Features</span>
                 <h2>Everything You Need to Create</h2>
-                <p>A complete AI-powered workflow from concept to published content</p>
+                <p>A complete AI-powered workflow from concept to published content — built for creators, marketers, and businesses of all sizes.</p>
             </div>
             <div class="features-grid">
-                <div class="feature-card">
+                <div class="feature-card" id="feature-image-gen">
                     <div class="feature-icon">🎨</div>
                     <h3>AI Image Generation</h3>
-                    <p>Generate photorealistic images with state-of-the-art diffusion models. Support for multiple styles and aspect ratios.</p>
+                    <p>Generate photorealistic images with state-of-the-art diffusion models. Support for multiple styles, aspect ratios, and reference-based generation.</p>
                 </div>
-                <div class="feature-card">
+                <div class="feature-card" id="feature-video-create">
                     <div class="feature-icon">🎬</div>
                     <h3>AI Video Creation</h3>
-                    <p>Transform still images into dynamic motion videos using Seedance AI. 5s to 60s clips with natural movement.</p>
+                    <p>Transform still images into dynamic motion videos using advanced AI. Create 5s to 60s clips with natural cinematic movement.</p>
                 </div>
-                <div class="feature-card">
+                <div class="feature-card" id="feature-post-prod">
                     <div class="feature-icon">✨</div>
                     <h3>Post-Production Suite</h3>
-                    <p>Color grading, speed ramping, watermarks, and visual effects — all processed locally with FFmpeg.</p>
+                    <p>Professional color grading, speed ramping, watermarks, and visual effects — all automated and processed locally.</p>
                 </div>
-                <div class="feature-card">
+                <div class="feature-card" id="feature-voiceover">
                     <div class="feature-icon">🗣️</div>
                     <h3>AI Voiceover</h3>
-                    <p>Natural Vietnamese text-to-speech with intelligent audio ducking. Free and unlimited via Edge-TTS.</p>
+                    <p>Natural multi-language text-to-speech with intelligent audio ducking. Choose from dozens of professional voice profiles.</p>
                 </div>
-                <div class="feature-card">
+                <div class="feature-card" id="feature-subtitles">
                     <div class="feature-icon">📝</div>
                     <h3>Auto Subtitles</h3>
-                    <p>Automatic speech recognition and subtitle generation using Whisper AI. Burn-in or SRT export.</p>
+                    <p>Automatic speech recognition and subtitle generation with multi-language support. Burn-in or export as SRT files.</p>
                 </div>
-                <div class="feature-card">
+                <div class="feature-card" id="feature-publishing">
                     <div class="feature-icon">📊</div>
                     <h3>Smart Publishing</h3>
-                    <p>Auto-generate captions, hashtags, and schedule posts with TikTok integration for optimal engagement.</p>
+                    <p>Auto-generate captions, hashtags, and schedule posts. Publish directly to TikTok and other platforms for maximum engagement.</p>
                 </div>
             </div>
         </div>
@@ -108,35 +120,108 @@
             <div class="section-header">
                 <span class="section-badge">Workflow</span>
                 <h2>How It Works</h2>
-                <p>Four simple steps from idea to published content</p>
+                <p>Four simple steps from idea to published content — no technical skills required.</p>
             </div>
             <div class="steps-grid">
                 <div class="step-card">
                     <div class="step-number">01</div>
                     <h3>Describe Your Vision</h3>
-                    <p>Enter a topic or creative prompt. Our AI analyzes trends and generates cinematic compositions.</p>
+                    <p>Enter a topic or creative prompt. Our AI analyzes trends and generates cinematic compositions tailored to your audience.</p>
                 </div>
                 <div class="step-card">
                     <div class="step-number">02</div>
                     <h3>Generate & Enhance</h3>
-                    <p>AI creates images, upscales to 4K, restores faces, and applies your channel's signature style.</p>
+                    <p>AI creates stunning images, upscales to 4K resolution, restores faces, and applies your channel's signature brand style.</p>
                 </div>
                 <div class="step-card">
                     <div class="step-number">03</div>
                     <h3>Post-Production</h3>
-                    <p>Add color grading, voiceover, subtitles, and effects automatically. Review and approve each step.</p>
+                    <p>Add professional color grading, voiceover, animated subtitles, and effects automatically. Review and approve each step.</p>
                 </div>
                 <div class="step-card">
                     <div class="step-number">04</div>
-                    <h3>Publish</h3>
-                    <p>Auto-generate captions and hashtags. Publish directly to TikTok or save locally.</p>
+                    <h3>Publish Everywhere</h3>
+                    <p>Auto-generate optimized captions and hashtags. Publish directly to TikTok, YouTube Shorts, or Instagram Reels — or save locally.</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Pricing</span>
+                <h2>Simple, Transparent Pricing</h2>
+                <p>Start free and upgrade as you grow. No hidden fees, cancel anytime.</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card" id="pricing-free">
+                    <div class="pricing-tier">Free</div>
+                    <div class="pricing-price">$0<span>/month</span></div>
+                    <div class="pricing-desc">Perfect for getting started</div>
+                    <ul class="pricing-features">
+                        <li>✓ 10 AI-generated images/day</li>
+                        <li>✓ 3 video exports/day</li>
+                        <li>✓ Basic voiceover</li>
+                        <li>✓ Auto subtitles</li>
+                        <li>✓ Community support</li>
+                    </ul>
+                    <a href="#get-started" class="btn btn-secondary btn-full">Get Started Free</a>
+                </div>
+                <div class="pricing-card pricing-card-featured" id="pricing-pro">
+                    <div class="pricing-popular">Most Popular</div>
+                    <div class="pricing-tier">Pro</div>
+                    <div class="pricing-price">$19<span>/month</span></div>
+                    <div class="pricing-desc">For serious content creators</div>
+                    <ul class="pricing-features">
+                        <li>✓ Unlimited AI images</li>
+                        <li>✓ Unlimited video exports</li>
+                        <li>✓ Premium voiceover voices</li>
+                        <li>✓ Advanced post-production</li>
+                        <li>✓ TikTok auto-publishing</li>
+                        <li>✓ Priority support</li>
+                        <li>✓ Analytics dashboard</li>
+                    </ul>
+                    <a href="#get-started" class="btn btn-primary btn-full">Start 7-Day Free Trial</a>
+                </div>
+                <div class="pricing-card" id="pricing-business">
+                    <div class="pricing-tier">Business</div>
+                    <div class="pricing-price">$49<span>/month</span></div>
+                    <div class="pricing-desc">For teams and agencies</div>
+                    <ul class="pricing-features">
+                        <li>✓ Everything in Pro</li>
+                        <li>✓ Team collaboration (5 seats)</li>
+                        <li>✓ Custom brand presets</li>
+                        <li>✓ API access</li>
+                        <li>✓ Dedicated account manager</li>
+                        <li>✓ White-label exports</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-secondary btn-full">Contact Sales</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Get Started / Sign Up Section -->
+    <section id="get-started" class="get-started">
+        <div class="container">
+            <div class="get-started-card">
+                <h2>Ready to Create Amazing Content?</h2>
+                <p>Join thousands of creators using BBNT Auto to produce professional videos effortlessly. Start your free account today — no credit card required.</p>
+                <form class="signup-form" id="signup-form" action="#" method="POST">
+                    <div class="form-row">
+                        <input type="email" id="signup-email" name="email" placeholder="Enter your email address" required aria-label="Email address">
+                        <button type="submit" class="btn btn-primary" id="signup-submit">Create Free Account</button>
+                    </div>
+                    <p class="form-note">By signing up, you agree to our <a href="terms.html">Terms of Service</a> and <a href="privacy.html">Privacy Policy</a>.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" id="main-footer">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
@@ -144,21 +229,27 @@
                         <span class="logo-icon">⚡</span>
                         <span class="logo-text">BBNT Auto</span>
                     </a>
-                    <p>AI-powered content automation platform for creators and businesses.</p>
+                    <p>AI-powered content automation platform for creators and businesses worldwide.</p>
+                    <div class="footer-social">
+                        <a href="https://www.tiktok.com/@bbntauto" target="_blank" rel="noopener" aria-label="TikTok">🎵</a>
+                    </div>
                 </div>
                 <div class="footer-links">
                     <h4>Product</h4>
                     <a href="#features">Features</a>
+                    <a href="#pricing">Pricing</a>
                     <a href="#how-it-works">How It Works</a>
                 </div>
                 <div class="footer-links">
                     <h4>Legal</h4>
                     <a href="terms.html">Terms of Service</a>
                     <a href="privacy.html">Privacy Policy</a>
+                    <a href="data-deletion.html">Data Deletion</a>
                 </div>
                 <div class="footer-links">
                     <h4>Support</h4>
-                    <a href="mailto:support@bbntauto.com">Contact Us</a>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="mailto:trancaominh95@gmail.com">Email Support</a>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -166,9 +257,33 @@
                 <div class="footer-legal">
                     <a href="terms.html">Terms</a>
                     <a href="privacy.html">Privacy</a>
+                    <a href="data-deletion.html">Data Deletion</a>
                 </div>
             </div>
         </div>
     </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+        if (menuBtn) {
+            menuBtn.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        }
+        // Signup form handler
+        const form = document.getElementById('signup-form');
+        if (form) {
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const email = document.getElementById('signup-email').value;
+                if (email) {
+                    alert('Thank you for signing up! We will send you an invitation link shortly to: ' + email);
+                    form.reset();
+                }
+            });
+        }
+    </script>
 </body>
 </html>
